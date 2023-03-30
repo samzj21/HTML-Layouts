@@ -6,4 +6,9 @@ body {
 
 ul {
     list-style: none;
+    font-weight: 300;
+}
+
+footer p {
+    font-weight: 400;
 }
