@@ -1,14 +1,42 @@
+ul {
+    list-style: none;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Noto Serif', serif;
 }
 
-ul {
-    list-style: none;
-    font-weight: 300;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242752;
+    color: #ffffff;
+    padding: 10px;
 }
 
-footer p {
-    font-weight: 400;
+.logo {
+    width: 50px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-btn {
+    display: block;
+    cursor: pointer;
+
+}
+
+.menu-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    border-radius: 3px;
 }
