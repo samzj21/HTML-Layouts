@@ -15,6 +15,7 @@ header {
     background-color: #242752;
     color: #ffffff;
     padding: 10px;
+    z-index: 0;
 }
 
 .logo {
@@ -36,7 +37,46 @@ header {
     display: block;
     width: 30px;
     height: 5px;
-    background-color: #ffffff;
     margin-bottom: 5px;
     border-radius: 3px;
+    background-color: #ffffff;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    padding: 20px;
+    background-color: #242752;
+    z-index: 1;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+aside.active {
+    left: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 20px;
+
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* pseudocalses */
+/* cuando pase por encima muestre una linea */
+nav ul li > a:hover {
+    text-decoration: underline;
 }
